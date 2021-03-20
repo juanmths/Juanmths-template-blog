@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap");
+
+/* Color */
+.bg-ku {
+  background-color: #21275f !important;
+}
+/* End Color */
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+.jumbotron-custom {
+  background-color: #21275f !important;
+  color: white;
+  text-align: center;
+}
+
+.card {
+  border-radius: 10px;
+}
+.card img {
+  border-radius: 10px 10px 0 0;
+}
+
+.nav-custome:hover {
+  background-color: #21275f !important;
+  color: white;
+}
+
+.footer-custom {
+  background-color: #21275f;
+  color: white;
+}
+
+.bi-facebook {
+  font-size: 20px;
+  color: #4645c7;
+}
+.bi-instagram {
+  font-size: 20px;
+  color: #4645c7;
+}
+.bi-whatsapp {
+  font-size: 20px;
+  color: #4645c7;
+}
+.bi-github {
+  font-size: 20px;
+  color: #4645c7;
+}
+.bi-telegram {
+  font-size: 20px;
+  color: #4645c7;
+}
+
+hr {
+  background-color: grey;
+}
+
+.medsos-icon {
+  background-color: thistle;
+  padding: 10px;
+  border-radius: 5px;
+}
+.medsos-icon:hover {
+  box-shadow: 2px 0px 5px white;
+  background-color: #4645c7;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-custom {
+  background-color: thistle;
+  padding: 5px;
+  border-radius: 50px;
+  color: #4645c7;
+}
+
+.btn-custom:hover {
+  box-shadow: 2px 0px 5px white;
+  background-color: #4645c7;
+  color: white;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.btn-custom a:hover {
+  text-decoration: none !important;
+}
+
+.right {
+  float: right !important;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 5px whitesmoke;
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #21275f;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4645c7;
+}
