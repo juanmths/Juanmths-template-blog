@@ -47,10 +47,9 @@
 
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid jumbotron-custom">
-      <div class="container">
-        <h1 class="display-4">Welcome</h1>
-        <p class="lead">Halaman ini merupakan halaman Portfolio pribadi.</p>
-        <a href="" class="btn-login p-2">LoadMore</a>
+      <div class="container text-center">
+        <h3>Judul Postingan</h3>
+        <small><i class="bi bi-person-check-fill"></i> <a href="">Juan Karly Matheus</a> | <i class="bi bi-bookmark-check-fill"></i> <a href="">Laravel</a> | <i class="bi bi-calendar2-check-fill"></i> 03/07/2021</small>
       </div>
     </div>
     <!-- Akhir Jumbotron -->
@@ -60,10 +59,9 @@
       <div class="row">
         <!-- isi -->
         <div class="col-md-8">
-          <div class="card mb-5">
+          <div class="card mb-3">
             <div class="card-body">
               <img class="card-img-top" src="assets/img/1.jpg" alt="Card image cap" />
-              <p class="mt-3"><i class="bi bi-person-check-fill"></i> Posted by : <a href="">Juan Karly Matheus</a> | <i class="bi bi-clock"></i> 3 Menit yang lalu | <i class="bi bi-tag-fill"></i> Laravel</p>
               <hr />
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe perspiciatis quasi ullam rerum velit natus quod debitis aliquam, nisi tempora iusto quisquam provident harum mollitia. Perferendis assumenda odio cumque
@@ -109,6 +107,68 @@
     </div>
     <!-- Akhir Content -->
 
+    <!-- Post Lainnya -->
+    <section class="lainnya mb-3">
+      <div class="container">
+        <h3 class="mt-3 mb-3">Postingan Lainnya</h3>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/1.jpg" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <a href="posts.html" class="btn btn-light text-info">Go somewhere</a>
+                <div class="info mt-2">
+                  <small class="mr-3"><i class="bi bi-archive"></i> Laravel</small>
+                  <small><i class="bi bi-clock"></i> 1 Minutes Ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/1.jpg" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <a href="posts.html" class="btn btn-light text-info">Go somewhere</a>
+                <div class="info mt-2">
+                  <small class="mr-3"><i class="bi bi-archive"></i> Laravel</small>
+                  <small><i class="bi bi-clock"></i> 1 Minutes Ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/1.jpg" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <a href="posts.html" class="btn btn-light text-info">Go somewhere</a>
+                <div class="info mt-2">
+                  <small class="mr-3"><i class="bi bi-archive"></i> Laravel</small>
+                  <small><i class="bi bi-clock"></i> 1 Minutes Ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/1.jpg" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <a href="posts.html" class="btn btn-light text-info">Go somewhere</a>
+                <div class="info mt-2">
+                  <small class="mr-3"><i class="bi bi-archive"></i> Laravel</small>
+                  <small><i class="bi bi-clock"></i> 1 Minutes Ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Post Lainnya -->
+
     <!-- About -->
     <section class="2 bg-light p-5">
       <div class="container">
@@ -133,31 +193,17 @@
     <footer class="footer-custom pb-1">
       <div class="container">
         <div class="contact p-5">
-          <h3 class="text-center mb-5">Jika ada pertanyaan, silahkan hubungi lewat form dibawah ini!</h3>
-          <div class="row justify-content-center">
-            <div class="col-md-6">
-              <form>
-                <div class="mb-3">
-                  <label for="name" class="form-label">Nama Lengkap</label>
-                  <input type="email" class="form-control" id="name" aria-describedby="name" />
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" aria-describedby="email" />
-                </div>
-                <div class="mb-3">
-                  <label for="pesan" class="form-label">Pesan</label>
-                  <textarea class="form-control" id="pesan" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-custom text-white">Submit</button>
-              </form>
-            </div>
-          </div>
-          <div class="medsos text-center">
+          <div class="medsos text-center mb-3">
             <a href=""><i class="bi bi-facebook mr-3 medsos-icon"></i></a>
             <a href=""><i class="bi bi-instagram mr-3 medsos-icon"></i></a>
             <a href=""><i class="bi bi-whatsapp medsos-icon"></i></a>
           </div>
+          <nav class="nav justify-content-center">
+            <a class="nav-link text-white" href="#">About</a>
+            <a class="nav-link text-white" href="#">Contact</a>
+            <a class="nav-link text-white" href="#">Disclaimer</a>
+            <a class="nav-link text-white" href="#">Privacy</a>
+          </nav>
         </div>
         <hr />
         <p class="text-center pt-2">© Copyright width <i class="bi bi-suit-heart-fill text-danger"></i> by <href href="">Juan Karly Matheus</href></p>
