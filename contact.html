@@ -17,36 +17,43 @@
   </head>
 
   <body>
-    <!-- loading -->
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Juanmths.com</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <!-- akhir loading -->
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Juanmths.com</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Product</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link font-weight-bold" href="#">Sign in <i class="bi bi-box-arrow-in-right"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Akhir Navbar -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Html</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Css</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Javascript</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Bootstrap</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Php</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Laravel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="#">Sign in <i class="bi bi-box-arrow-in-right"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Akhir Navbar -->
 
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid jumbotron-custom">
@@ -55,9 +62,17 @@
           <div class="col-md-6">
             <h1 class="display-4">Welcome</h1>
             <p class="lead">Belajar web programming & web design secara gratis di blog ini.</p>
+            <div class="input-group mb-3">
+              <form action=""></form>
+              <input type="text" class="form-control" placeholder="Cari apa bosku!" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button" ><i class="bi bi-search text-white"></i></button>
+              </div>
+            </form>
+            </div>
           </div>
           <div class="col-md-6">
-            <img src="assets/img/code-thinking.svg" class="float-right" alt="" width="450" />
+            <img src="assets/img/code-thinking.svg" class="float-right" alt="" width="450">
           </div>
         </div>
       </div>
@@ -70,7 +85,7 @@
     <section class="p-5">
       <div class="container">
         <div class="row justify-content-center">
-          <p>Jika ada pertanyaan, silahkan hubungi <a href="">Admin</a>melalui contact form dibawah ini !</p>
+          <p>Jika ada pertanyaan, silahkan hubungi <a href="">Admin</a> melalui contact form dibawah ini !</p>
           <div class="col-md-8">
             <form>
               <div class="mb-3">
@@ -85,7 +100,7 @@
                 <label for="pesan" class="form-label">Pesan</label>
                 <textarea class="form-control" id="pesan" rows="3"></textarea>
               </div>
-              <button type="submit" class="btn btn-custom text-white float-right">Submit</button>
+              <button type="submit" class="btn btn-custom text-white float-right">Kirim</button>
             </form>
           </div>
         </div>
@@ -98,64 +113,82 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h5 class="text-white">Populer Post</h5>
+            <h5 class="text-white mb-3">Populer Post</h5>
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Active</a>
+                <a class="nav-link text-white" href="#">Active</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link text-white" href="#">Link</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link text-white" href="#">Link</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
+                <a class="nav-link text-white" href="#">Disabled</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Disabled</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Disabled</a>
               </li>
             </ul>
           </div>
-          <div class="col-md-4">
-            <h5 class="text-white">Category</h5>
+          <div class="col-md-3">
+            <h5 class="text-white mb-3">Category</h5>
             <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Active</a>
+              <li class="nav-item nav-custome">
+                <a class="nav-link text-white" href="#">HTML</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link text-white" href="#">CSS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link text-white" href="#">JAVASCRIPT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
+                <a class="nav-link text-white" href="#">BOOTSTRAP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">PHP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">LARAVEL</a>
               </li>
             </ul>
           </div>
-          <div class="col-md-4">
-            <h5 class="text-white">Subscribe</h5>
+          <div class="col-md-5">
+            <h5 class="text-white mb-3">Subscribe</h5>
             <form>
               <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
               </div>
             </form>
             <hr />
-            <div class="medsos float-right">
+            <div class="medsos text-center">
+              <label class="mb-3">Media Social</label><br />
               <a href=""><i class="bi bi-facebook mr-3 medsos-icon"></i></a>
               <a href=""><i class="bi bi-instagram mr-3 medsos-icon"></i></a>
               <a href=""><i class="bi bi-whatsapp mr-3 medsos-icon"></i></a>
               <a href=""><i class="bi bi-github mr-3 medsos-icon"></i></a>
               <a href=""><i class="bi bi-telegram medsos-icon"></i></a>
             </div>
+            <hr />
+            <nav class="nav justify-content-between">
+              <a class="nav-link text-white" href="about.html">About</a>
+              <a class="nav-link text-white" href="contact.html">Contact</a>
+              <a class="nav-link text-white" href="#">Disclaimer</a>
+              <a class="nav-link text-white" href="#">Privacy</a>
+            </nav>
           </div>
         </div>
         <hr />
-        <p class="text-center pt-2">© Created width <i class="bi bi-suit-heart-fill text-danger"></i> by <href href="#">Juan Karly Matheus</href></p>
+        <p class="text-center pt-2">Created width <i class="bi bi-suit-heart-fill text-danger"></i> by <a href="" class="text-white font-weight-bold">Juan Karly Matheus</a></p>
       </div>
     </footer>
     <!-- Akhir Footer -->
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

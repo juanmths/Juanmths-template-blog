@@ -20,7 +20,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
       <div class="container">
-        <a class="navbar-brand shadow" href="index.html"><img src="assets/img/omju.png" alt="" width="200" /></a>
+        <a class="navbar-brand" href="index.html">Juanmths.com</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,13 +28,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">Html</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#">Css</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Product</a>
+              <a class="nav-link" href="#">Javascript</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bootstrap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Php</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Laravel</a>
             </li>
             <li class="nav-item">
               <a class="nav-link font-weight-bold" href="#">Sign in <i class="bi bi-box-arrow-in-right"></i></a>
@@ -49,10 +58,35 @@
     <div class="jumbotron jumbotron-fluid jumbotron-custom">
       <div class="container text-center">
         <h3>Judul Postingan</h3>
-        <small><i class="bi bi-person-check-fill"></i> <a href="">Juan Karly Matheus</a> | <i class="bi bi-bookmark-check-fill"></i> <a href="">Laravel</a> | <i class="bi bi-calendar2-check-fill"></i> 03/07/2021</small>
+        <smal
+          ><i class="bi bi-person-check-fill"></i> <a href="" class="text-white">Juan Karly Matheus</a> | <i class="bi bi-bookmark-check-fill"></i> <a href="" class="text-white">Laravel</a> |
+          <i class="bi bi-calendar2-check-fill"></i> 03/07/2021</smal
+        >
+        <div class="row justify-content-center">
+          <div class="col-md-4 mt-5">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Cari apa bosku!" aria-label="Recipient's username" aria-describedby="button-addon2" />
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="bi bi-search text-white"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Akhir Jumbotron -->
+
+    <!-- Breadcrumd -->
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+    </div>
+    <!-- End Breadcrumd -->
 
     <!-- Content -->
     <div class="container">
@@ -62,8 +96,7 @@
           <div class="card mb-3">
             <div class="card-body">
               <img class="card-img-top" src="assets/img/1.jpg" alt="Card image cap" />
-              <hr />
-              <p>
+              <p class="mt-4">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe perspiciatis quasi ullam rerum velit natus quod debitis aliquam, nisi tempora iusto quisquam provident harum mollitia. Perferendis assumenda odio cumque
                 voluptatibus error doloribus ex tempore id iusto deleniti provident voluptatem, autem ab ea illum eos nemo voluptate numquam excepturi cupiditate fugit recusandae! Eligendi explicabo quo, facilis qui culpa soluta itaque eum
                 in, laborum dolores animi iure earum, dolorum quidem incidunt aperiam cumque a voluptatum at repudiandae natus consequuntur optio non! Esse perspiciatis omnis dolorum, enim cupiditate soluta voluptate ea delectus sunt
@@ -84,22 +117,48 @@
         </div>
         <!-- akhir isi -->
         <!-- Menu kanan -->
-        <div class="col-md-4">
-          <h5 class="text-center">Populer posts</h5>
-          <ul class="list-group">
-            <li class="list-group-item disabled">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Morbi leo risus</li>
-            <li class="list-group-item">Porta ac consectetur ac</li>
-            <li class="list-group-item">Vestibulum at eros</li>
-          </ul>
-          <h5 class="text-center mt-3">Populer posts</h5>
+        <div class="col-md-4 sticky-top">
+          <h5 class="text-center h5-bg">Populer posts</h5>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">List group item heading</h5>
+                <img src="assets/img/1.jpg" class="img-category" alt="" width="100" />
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">List group item heading</h5>
+                <img src="assets/img/1.jpg" class="img-category" alt="" width="100" />
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">List group item heading</h5>
+                <img src="assets/img/1.jpg" class="img-category" alt="" width="100" />
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">List group item heading</h5>
+                <img src="assets/img/1.jpg" class="img-category" alt="" width="100" />
+              </div>
+            </a>
+          </div>
+          <h5 class="text-center mt-3 h5-bg">Category</h5>
           <ul class="list-group mt-3">
-            <li class="list-group-item disabled">Cras justo odio lab</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Morbi leo risus</li>
-            <li class="list-group-item">Porta ac consectetur ac</li>
-            <li class="list-group-item">Vestibulum at eros</li>
+            <a class="link" href="#">
+              <li class="list-group-item">Cras justo odio lab <i class="bi bi-folder-fill float-right"></i></li>
+            </a>
+            <a href="#">
+              <li class="list-group-item">Cras justo odio lab <i class="bi bi-folder-fill float-right"></i></li>
+            </a>
+            <a href="#">
+              <li class="list-group-item">Cras justo odio lab <i class="bi bi-folder-fill float-right"></i></li>
+            </a>
+            <a href="#">
+              <li class="list-group-item">Cras justo odio lab <i class="bi bi-folder-fill float-right"></i></li>
+            </a>
           </ul>
         </div>
         <!-- Akhir Menu kanan -->
@@ -127,7 +186,7 @@
           </div>
           <div class="col-md-3">
             <div class="card">
-              <img class="card-img-top" src="assets/img/1.jpg" alt="Card image cap" />
+              <img class="card-img-top" src="assets/img/4.jpg" alt="Card image cap" />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <a href="posts.html" class="btn btn-light text-info">Go somewhere</a>
@@ -140,7 +199,7 @@
           </div>
           <div class="col-md-3">
             <div class="card">
-              <img class="card-img-top" src="assets/img/1.jpg" alt="Card image cap" />
+              <img class="card-img-top" src="assets/img/2.jpg" alt="Card image cap" />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <a href="posts.html" class="btn btn-light text-info">Go somewhere</a>
@@ -153,7 +212,7 @@
           </div>
           <div class="col-md-3">
             <div class="card">
-              <img class="card-img-top" src="assets/img/1.jpg" alt="Card image cap" />
+              <img class="card-img-top" src="assets/img/3.jpg" alt="Card image cap" />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <a href="posts.html" class="btn btn-light text-info">Go somewhere</a>
@@ -196,7 +255,9 @@
           <div class="medsos text-center mb-3">
             <a href=""><i class="bi bi-facebook mr-3 medsos-icon"></i></a>
             <a href=""><i class="bi bi-instagram mr-3 medsos-icon"></i></a>
-            <a href=""><i class="bi bi-whatsapp medsos-icon"></i></a>
+            <a href=""><i class="bi bi-whatsapp mr-3 medsos-icon"></i></a>
+            <a href=""><i class="bi bi-github mr-3 medsos-icon"></i></a>
+            <a href=""><i class="bi bi-telegram medsos-icon"></i></a>
           </div>
           <nav class="nav justify-content-center">
             <a class="nav-link text-white" href="#">About</a>
@@ -206,7 +267,7 @@
           </nav>
         </div>
         <hr />
-        <p class="text-center pt-2">© Copyright width <i class="bi bi-suit-heart-fill text-danger"></i> by <href href="">Juan Karly Matheus</href></p>
+        <p class="text-center pt-2">Created width <i class="bi bi-suit-heart-fill text-danger"></i> by <a href="" class="text-white font-weight-bold">Juan Karly Matheus</a></p>
       </div>
     </footer>
     <!-- Akhir Footer -->
