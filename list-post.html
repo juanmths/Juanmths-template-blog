@@ -23,9 +23,7 @@
 
 <body>
   <!-- loading -->
-  <div class="spinner-wrapper">
-    <div class="spinner"></div>
-  </div>
+
   <!-- akhir loading -->
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-ku shadow fixed-top mb-5">
@@ -57,7 +55,7 @@
             <a class="nav-link" href="#">Laravel</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link font-weight-bold" href="login.html">Sign in <i class="bi bi-box-arrow-in-right"></i></a>
+            <a class="nav-link font-weight-bold" href="#">Sign in <i class="bi bi-box-arrow-in-right"></i></a>
           </li>
         </ul>
       </div>
@@ -91,7 +89,8 @@
 <div class="container">
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item active " aria-current="page">Home</li>
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item">Library</li>
     </ol>
   </nav>
 </div>  
@@ -228,16 +227,25 @@
 
       <div class="row">
         <div class="col-md-4">
-          <h5 class="text-white mb-3">Quick Link</h5>
+          <h5 class="text-white mb-3">Populer Post</h5>
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#"><i class="bi bi-bookmark-heart-fill"></i> Fkip Peduli</a>
+              <a class="nav-link text-white" href="#">Active</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#"><i class="bi bi-bookmark-heart-fill"></i> Cek Ongkir</a>
+              <a class="nav-link text-white" href="#">Link</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#"><i class="bi bi-bookmark-heart-fill"></i> Cek Covid-19</a>
+              <a class="nav-link text-white" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Disabled</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Disabled</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Disabled</a>
             </li>
           </ul>
         </div>
@@ -245,22 +253,22 @@
           <h5 class="text-white mb-3">Category</h5>
           <ul class="nav flex-column">
             <li class="nav-item nav-custome">
-              <a class="nav-link text-white" href="#"><i class="bi bi-bookmark-fill"></i> HTML</a>
+              <a class="nav-link text-white" href="#">HTML</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#"><i class="bi bi-bookmark-fill"></i> CSS</a>
+              <a class="nav-link text-white" href="#">CSS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#"><i class="bi bi-bookmark-fill"></i> JAVASCRIPT</a>
+              <a class="nav-link text-white" href="#">JAVASCRIPT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#"><i class="bi bi-bookmark-fill"></i> BOOTSTRAP</a>
+              <a class="nav-link text-white" href="#">BOOTSTRAP</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#"><i class="bi bi-bookmark-fill"></i> PHP</a>
+              <a class="nav-link text-white" href="#">PHP</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#"><i class="bi bi-bookmark-fill"></i> LARAVEL</a>
+              <a class="nav-link text-white" href="#">LARAVEL</a>
             </li>
           </ul>
         </div>
@@ -307,13 +315,11 @@
   <!-- my js -->
   <script src="assets/main.js"></script>
   <script src="jquery.min.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
   <script>
-    let spinnerWrapper = document.querySelector(".spinner-wrapper");
-
-    window.addEventListener("load", function () {
-      // spinnerWrapper.style.display = 'none';
-      spinnerWrapper.parentElement.removeChild(spinnerWrapper);
-    });
+    $(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
   </script>
 </body>
 </html>
